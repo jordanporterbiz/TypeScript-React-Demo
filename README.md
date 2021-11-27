@@ -43,3 +43,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 You can learn more about TypeScript in the [TypeScript documentation](https://www.typescriptlang.org/docs/).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+[website]: https://blackphoenixsolutions.co.uk
+[instagram]: https://www.instagram.com/jordansjourneythroughlife
+[linkedin]: https://www.linkedin.com/in/creatingthefuture
