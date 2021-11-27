@@ -2,7 +2,9 @@ import './App.css';
 import { Greet } from './components/Greet'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
-
+import { Status } from './components/Status'
+import { Heading } from './components/Heading'
+import { Oscar } from './components/Oscar'
 
 
 function App() {
@@ -34,9 +36,13 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name='Jordan' levelCount={200}/> 
+      <Greet name='Jordan' isLoggedIn={true} levelCount={200}/> 
       <Person name={personName}/>
       <PersonList list={nameList}/>
+      <Status status='success'/>
+      <Oscar>
+        <Heading>Oscar goes to PORTER!!! :D :D </Heading>
+      </Oscar>
     </div>
   );
 }
