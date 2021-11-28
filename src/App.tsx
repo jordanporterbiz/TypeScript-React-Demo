@@ -13,7 +13,7 @@ import { Box } from './components/context/Box'
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import { User } from './components/context/User'
 import { UserContextProvider } from './components/context/UserContext'
-
+import { List } from './components/generics/List'
 function App() {
 
 
@@ -83,6 +83,45 @@ function App() {
       <UserContextProvider>
         <User/>
       </UserContextProvider>
+
+      {/* When you have a component that you would like to re-use,
+       it's best to use generic types to handle multiple data inputs 
+       */}
+      <List 
+        items={['Batman', 'Superman', 'Spiderman', 'Black Panther', 'Thor', 'Hulk']}
+        onClick={(item) => console.log(item)} />
+
+      <List 
+        items={[0, 1, 2, 3, 4, 5]}
+        onClick={(item) => console.log(item)} />
+
+      <List 
+        items={[{
+          first: 'Bruce',
+          last: 'Wayne',
+        },
+        {
+          first: 'Clark',
+          last: 'Kent',
+        },
+        {
+          first: 'Peter',
+          last: 'Parker',
+        },
+        {
+          first: 'King',
+          last: 'T\'Challa',
+        },
+        {
+          first: 'Thor',
+          last: 'Odinson',
+        },
+        {
+          first: 'Bruce',
+          last: 'Banner',
+        },
+      ]}
+        onClick={(item) => console.log(item)} />
 
 
     </div>
