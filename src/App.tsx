@@ -17,6 +17,8 @@ import { List } from './components/generics/List'
 import { RandomNumber } from './components/restriction/RandomNumber'
 import { Toast } from './components/templateliterals/Toast'
 import { CustomButton } from './components/html/Button';
+import { CustomComponent } from './components/html/CustomComponent';
+import { Text } from './components/polymorphic/Text'
 
 function App() {
 
@@ -137,7 +139,14 @@ function App() {
       <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
         Primary Button
       </CustomButton>
-
+      <br/>
+      <br/>
+      <CustomComponent name={'Jordan'} isLoggedIn={false} />
+      <br/>
+      <br/>
+      <Text size='lg' as='h1'>Heading</Text>
+      <Text size='md' as='p'>Paragraph</Text>
+      <Text size='sm' as='label' color='secondary'>Label</Text>
     </div>
   );
 }
