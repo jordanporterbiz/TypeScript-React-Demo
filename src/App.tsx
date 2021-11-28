@@ -14,6 +14,9 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import { User } from './components/context/User'
 import { UserContextProvider } from './components/context/UserContext'
 import { List } from './components/generics/List'
+import { RandomNumber } from './components/restriction/RandomNumber'
+
+
 function App() {
 
 
@@ -122,6 +125,9 @@ function App() {
         },
       ]}
         onClick={(item) => console.log(item)} />
+      <br/>
+      <br/>
+      <RandomNumber value={10} isPositive/>
 
 
     </div>
