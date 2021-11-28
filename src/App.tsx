@@ -16,6 +16,7 @@ import { UserContextProvider } from './components/context/UserContext'
 import { List } from './components/generics/List'
 import { RandomNumber } from './components/restriction/RandomNumber'
 import { Toast } from './components/templateliterals/Toast'
+import { CustomButton } from './components/html/Button';
 
 function App() {
 
@@ -131,6 +132,11 @@ function App() {
       <br/>
       <br/>
       <Toast position='center'/>
+      <br/>
+      <br/>
+      <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
+        Primary Button
+      </CustomButton>
 
     </div>
   );
