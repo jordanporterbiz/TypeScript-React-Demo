@@ -15,7 +15,7 @@ import { User } from './components/context/User'
 import { UserContextProvider } from './components/context/UserContext'
 import { List } from './components/generics/List'
 import { RandomNumber } from './components/restriction/RandomNumber'
-
+import { Toast } from './components/templateliterals/Toast'
 
 function App() {
 
@@ -128,7 +128,9 @@ function App() {
       <br/>
       <br/>
       <RandomNumber value={10} isPositive/>
-
+      <br/>
+      <br/>
+      <Toast position='center'/>
 
     </div>
   );
